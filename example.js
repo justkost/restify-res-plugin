@@ -1,5 +1,9 @@
 const restify = require('restify')
+const restifyResPlugin = require('./index')
+
 const server = restify.createServer()
+
+server.use(restifyResPlugin())
 
 server.get('/', (req, res) => {
   res.send({
