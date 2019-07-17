@@ -1,0 +1,27 @@
+{
+  "extends": ["standard"],
+  "env": {
+    "node": true,
+    "es6": true,
+    "jest": true
+  },
+  "plugins": [
+    "standard",
+    "promise",
+    "jest"
+  ],
+  "rules": {
+    "no-trailing-spaces": 1,
+    "comma-dangle": [1, "always-multiline"],
+    "generator-star-spacing": [1, {"before": false, "after": true}],
+    "space-before-function-paren": [1, "never"],
+    "no-console": 1,
+    "max-len": [1, { "code": 120 }],
+    "no-mixed-operators": 1,
+    "jest/no-disabled-tests": "warn",
+    "jest/no-focused-tests": "error",
+    "jest/no-identical-title": "error",
+    "jest/prefer-to-have-length": "warn",
+    "jest/valid-expect": "error"
+  }
+}
