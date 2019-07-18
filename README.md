@@ -1,7 +1,24 @@
 # Restify Response Plugin
 
-Add methods 'ok' and 'error' to the res object
+```js
+res.ok('Data')
+```
 
+{
+  isSuccess: true,
+  data: "Data"
+}
+
+```js
+res.error('Message')
+```
+
+{
+  isSuccess: false,
+  error: "Message"
+}
+
+## Example
 ```js
 const restify = require('restify')
 const restifyResPlugin = require('./index')
@@ -26,5 +43,11 @@ server.get('/error-with-status', (req, res) => {
   res.error(400, 'Error message')
 })
 ```
+
+## Options
+
+* defaultErrorStatus _(default 200)_
+
+## Success / Faile
 
 also you can use res.success and res.fail
