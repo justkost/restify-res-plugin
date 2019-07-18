@@ -21,7 +21,7 @@ res.error('Message')
 ## Example
 ```js
 const restify = require('restify')
-const restifyResPlugin = require('./index')
+const restifyResPlugin = require('restify-res-plugin')
 
 const server = restify.createServer()
 
