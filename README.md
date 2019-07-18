@@ -18,6 +18,10 @@ res.error('Message')
   error: "Message"
 }
 
+## Installation
+
+npm install restify-res-plugin
+
 ## Example
 ```js
 const restify = require('restify')
