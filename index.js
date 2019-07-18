@@ -9,7 +9,7 @@ function restifyResPlugin(options) {
       res.json({
         isSuccess: true,
         data,
-        meta
+        meta,
       })
     }
     const fail = (...args) => {

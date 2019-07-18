@@ -12,7 +12,7 @@ server.get('/', (req, res) => {
 })
 
 server.get('/with-meta-data', (req, res) => {
-  res.ok('Data', {page: 1})
+  res.ok('Data', { page: 1 })
 })
 
 server.get('/error', (req, res) => {
